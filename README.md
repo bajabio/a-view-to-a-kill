@@ -6,7 +6,7 @@ Primary author: **Jeff Milton**
 A toolkit for discovering and prioritizing cancer synthetic-lethal drug targets from public
 genome-scale data (DepMap CRISPR dependencies, copy number, expression, mutation; Ensembl paralogs;
 GTEx; protein interactions). It implements two complementary target-discovery models and the
-driver-versus-passenger discipline that keeps their predictions honest.
+driver-versus-passenger discipline that keeps their predictions .
 
 The central idea: cancers delete DNA in blocks, so a deleted gene often drags an innocent neighbor
 (a *passenger*) down with it. When that passenger has an essential **paralog**, the surviving copy
@@ -23,7 +23,7 @@ Two models, one principle.
    Predicts, for any paralog pair, whether one becomes essential when its partner is lost. Trained on
    DepMap-derived labels with generalizable features (sequence identity, family size, co-dependency,
    co-expression, protein interaction, normal-tissue expression). Recovers validated targets
-   (VPS4A, SMARCA4, MAGOH) blind. Includes the honest finding that a DepMap-derived label is entangled
+   (VPS4A, SMARCA4, MAGOH) blind. Includes the  finding that a DepMap-derived label is entangled
    with single-gene essentiality, and that generalizable pair features win on independent validation.
 
 2. **Higher-order (third-gene) model** (`src/higher_order/`)
@@ -159,7 +159,7 @@ A typical flow:
 6. `src/applications/cross_cancer_paralog_targets.py` — the cross-cancer target map.
 7. `src/collateral_lethality/` — the oligodendroglioma / dosage-sensitive analyses.
 
-## Honest caveats
+## please take note:   the results are not validated targets ... 
 
 This toolkit generates **hypotheses**, not validated targets.
 
