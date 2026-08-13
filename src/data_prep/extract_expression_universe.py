@@ -1,3 +1,9 @@
+# Streams the DepMap expression matrix and extracts the paralog-universe genes.
+#
+# Baja Bio · Bioinformatics — synthetic-lethality target-discovery toolkit
+# Primary author: Jeff Milton
+# Public dependency/genomic data per docs/DATA_SOURCES.md; set input paths at the top for your setup.
+
 import sys,csv
 csv.field_size_limit(10**7); want=set(open('universe.txt').read().split())
 r=csv.reader(sys.stdin); h=next(r); sym=[c.split(' (')[0] for c in h]

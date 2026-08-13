@@ -1,3 +1,9 @@
+# Pulls phylogenetic conservation (PANTHER ortholog breadth) for a gene set from mygene.info.
+#
+# Baja Bio · Bioinformatics — synthetic-lethality target-discovery toolkit
+# Primary author: Jeff Milton
+# Public dependency/genomic data per docs/DATA_SOURCES.md; set input paths at the top for your setup.
+
 import json,urllib.request,urllib.parse,time
 genes=open("qpcr_genes.txt").read().split()
 # mygene querymany POST

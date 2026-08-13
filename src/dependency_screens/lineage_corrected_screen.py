@@ -1,3 +1,9 @@
+# Lineage-corrected differential-dependency screen (Frisch-Waugh-Lovell) that recovers known synthetic-lethal partners.
+#
+# Baja Bio · Bioinformatics — synthetic-lethality target-discovery toolkit
+# Primary author: Jeff Milton
+# Public dependency/genomic data per docs/DATA_SOURCES.md; set input paths at the top for your setup.
+
 import numpy as np, pandas as pd
 import matplotlib; matplotlib.use("Agg"); import matplotlib.pyplot as plt
 from matplotlib.patches import Rectangle

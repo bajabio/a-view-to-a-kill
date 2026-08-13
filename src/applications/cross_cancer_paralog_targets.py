@@ -1,3 +1,9 @@
+# Builds the cross-cancer target map: for each paralog target and cancer type, the fraction of tumors carrying the enabling partner loss.
+#
+# Baja Bio · Bioinformatics — synthetic-lethality target-discovery toolkit
+# Primary author: Jeff Milton
+# Public dependency/genomic data per docs/DATA_SOURCES.md; set input paths at the top for your setup.
+
 import numpy as np, pandas as pd
 import matplotlib; matplotlib.use("Agg"); import matplotlib.pyplot as plt
 M=pd.read_csv("gene_effect_full.csv",index_col=0); M.columns=[c.split(" (")[0] for c in M.columns]

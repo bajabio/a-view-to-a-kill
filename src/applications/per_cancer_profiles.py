@@ -1,3 +1,9 @@
+# Per-cancer genetic profiles and passenger-deletion target opportunities (e.g. VPS4A, PRMT5).
+#
+# Baja Bio · Bioinformatics — synthetic-lethality target-discovery toolkit
+# Primary author: Jeff Milton
+# Public dependency/genomic data per docs/DATA_SOURCES.md; set input paths at the top for your setup.
+
 import numpy as np, pandas as pd
 M=pd.read_csv("gene_effect_full.csv",index_col=0); M.columns=[c.split(" (")[0] for c in M.columns]
 lin=pd.read_csv("Model.csv").set_index("ModelID")["OncotreeLineage"]

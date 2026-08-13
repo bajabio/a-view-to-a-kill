@@ -1,3 +1,9 @@
+# Streams a large DepMap matrix and extracts the requested gene columns.
+#
+# Baja Bio · Bioinformatics — synthetic-lethality target-discovery toolkit
+# Primary author: Jeff Milton
+# Public dependency/genomic data per docs/DATA_SOURCES.md; set input paths at the top for your setup.
+
 import sys,csv
 csv.field_size_limit(10**7)
 want=set(open("bg_genes.txt").read().split()); out=sys.argv[1]

@@ -1,3 +1,9 @@
+# Locates paralog partners on chromosome arms 1p and 19q via mygene map_location.
+#
+# Baja Bio · Bioinformatics — synthetic-lethality target-discovery toolkit
+# Primary author: Jeff Milton
+# Public dependency/genomic data per docs/DATA_SOURCES.md; set input paths at the top for your setup.
+
 import numpy as np, pandas as pd, json, urllib.request, urllib.parse
 # candidate paralog pairs where target B is a selective dependency
 M=pd.read_csv("gene_effect_full.csv",index_col=0); M.columns=[c.split(" (")[0] for c in M.columns]

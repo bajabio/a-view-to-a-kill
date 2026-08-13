@@ -1,0 +1,18 @@
+#!/usr/bin/env python3
+# a_view_to_a_kill — add two genes as the cancer background, get a rank-ordered kill list of targets.
+#
+# Baja Bio · Bioinformatics — synthetic-lethality target-discovery toolkit
+# Primary author: Jeff Milton
+# Public dependency/genomic data per docs/DATA_SOURCES.md; set input paths for your setup.
+#
+# Thin launcher for src/predict/rank_targets.py so the tool has a proper command name on PATH.
+import os
+import sys
+
+_HERE = os.path.dirname(os.path.abspath(__file__))
+sys.path.insert(0, os.path.join(_HERE, "..", "src", "predict"))
+
+from rank_targets import main  # noqa: E402
+
+if __name__ == "__main__":
+    main()

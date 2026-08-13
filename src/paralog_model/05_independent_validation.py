@@ -1,3 +1,9 @@
+# Paralog model, step 5: test generalizable features vs essentiality on 13 independently validated synthetic lethals.
+#
+# Baja Bio · Bioinformatics — synthetic-lethality target-discovery toolkit
+# Primary author: Jeff Milton
+# Public dependency/genomic data per docs/DATA_SOURCES.md; set input paths at the top for your setup.
+
 import numpy as np, pandas as pd
 from sklearn.ensemble import HistGradientBoostingClassifier
 d=pd.read_csv("paralog_ml_v2.csv"); d["SL"]=(d["diff"]<-0.15).astype(int)

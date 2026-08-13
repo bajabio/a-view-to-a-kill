@@ -1,3 +1,9 @@
+# Decomposes a two-gene-loss dependency into its single-loss parts to tell a real interaction from a co-deleted passenger.
+#
+# Baja Bio · Bioinformatics — synthetic-lethality target-discovery toolkit
+# Primary author: Jeff Milton
+# Public dependency/genomic data per docs/DATA_SOURCES.md; set input paths at the top for your setup.
+
 import numpy as np, pandas as pd
 M=pd.read_csv("gene_effect_full.csv",index_col=0); M.columns=[c.split(" (")[0] for c in M.columns]
 L=pd.read_csv("lof_matrix.csv").set_index("ModelID").reindex(M.index).fillna(False).astype(bool)

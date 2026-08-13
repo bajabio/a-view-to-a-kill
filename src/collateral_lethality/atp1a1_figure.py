@@ -1,3 +1,9 @@
+# Figure: ATP1A1 turns essential as its 19q paralog ATP1A3 is reduced, a dosage-sensitive collateral target for 1p/19q loss.
+#
+# Baja Bio · Bioinformatics — synthetic-lethality target-discovery toolkit
+# Primary author: Jeff Milton
+# Public dependency/genomic data per docs/DATA_SOURCES.md; set input paths at the top for your setup.
+
 import numpy as np, pandas as pd
 import matplotlib; matplotlib.use("Agg"); import matplotlib.pyplot as plt
 from scipy.stats import pearsonr

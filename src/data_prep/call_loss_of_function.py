@@ -1,3 +1,9 @@
+# Calls loss of function per gene per cell line (mutation or deletion/low expression) and counts two-gene-loss backgrounds.
+#
+# Baja Bio · Bioinformatics — synthetic-lethality target-discovery toolkit
+# Primary author: Jeff Milton
+# Public dependency/genomic data per docs/DATA_SOURCES.md; set input paths at the top for your setup.
+
 import numpy as np, pandas as pd
 expr=pd.read_csv("bg_expr.csv").set_index("ModelID")
 mut =pd.read_csv("bg_mut.csv").set_index("ModelID")

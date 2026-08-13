@@ -1,3 +1,9 @@
+# The ENO1/ENO2 collateral-lethality case: ENO2 is essential only where ENO1 is homozygously deleted.
+#
+# Baja Bio · Bioinformatics — synthetic-lethality target-discovery toolkit
+# Primary author: Jeff Milton
+# Public dependency/genomic data per docs/DATA_SOURCES.md; set input paths at the top for your setup.
+
 import numpy as np, pandas as pd
 import matplotlib; matplotlib.use("Agg"); import matplotlib.pyplot as plt
 d=pd.read_csv("eno_cn.csv")

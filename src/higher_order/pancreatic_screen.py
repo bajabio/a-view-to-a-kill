@@ -1,3 +1,9 @@
+# Third-gene screens on the pancreatic-defining two-loss backgrounds (SMAD4+TP53, CDKN2A+TP53).
+#
+# Baja Bio · Bioinformatics — synthetic-lethality target-discovery toolkit
+# Primary author: Jeff Milton
+# Public dependency/genomic data per docs/DATA_SOURCES.md; set input paths at the top for your setup.
+
 import numpy as np, pandas as pd
 from scipy import stats
 from statsmodels.stats.multitest import multipletests
