@@ -1,0 +1,21 @@
+{
+  "model": "HistGradientBoostingClassifier",
+  "features": [
+    "maxid",
+    "minid",
+    "famA",
+    "B_ess_mean",
+    "B_ess_min",
+    "B_ess_var",
+    "A_ess_mean",
+    "A_loss_freq",
+    "codep",
+    "coexpr",
+    "B_gtex_med",
+    "B_gtex_breadth",
+    "bioplex"
+  ],
+  "n_train": 161727,
+  "n_positive": 156,
+  "note": "Trained on all paralog pairs; predictions in paralog_SL_predictions.csv. See src/paralog_model for reproduction."
+}

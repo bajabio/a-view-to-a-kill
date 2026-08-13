@@ -1,0 +1,29 @@
+# Local working data (downloaded from third parties; see docs/DATA_SOURCES.md)
+data/
+*.gct
+*.gct.gz
+gene_effect_full.csv
+paralogs.tsv
+uni_*.csv
+bg_*.csv
+depmap_*.csv
+expr_subset.csv
+vps_expr.csv
+lof_matrix.csv
+Model.csv
+sl_data.csv
+dbid2name.csv
+bioplex.tsv
+gtex.gct.gz
+*.xlsx
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+qpcr-venv/
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
